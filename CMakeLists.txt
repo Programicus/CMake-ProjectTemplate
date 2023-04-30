@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
-include(ProjectSetup.cmake)
+include(setup/ProjectSetup.cmake)
 
 add_subdirectory(external EXCLUDE_FROM_ALL) #all will not auto build these, but they will get imported as dependencies
 add_subdirectory(src)
