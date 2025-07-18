@@ -24,3 +24,7 @@ target_link_libraries(gui PUBLIC project_warnings
 	Vulkan::Vulkan
 	vk-bootstrap
 )
+
+target_include_directories(gui PUBLIC
+	"${CMAKE_CURRENT_SOURCE_DIR}"
+)
