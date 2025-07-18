@@ -25,8 +25,6 @@ File: {}
 Line: {}
 Column: {}
 
-
-
 )",
 formatted_message,
 info.loc.file_name(), info.loc.line(),
