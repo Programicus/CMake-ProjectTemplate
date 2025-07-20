@@ -1,8 +1,7 @@
-#include <memory>
+module gui.context;
 
 import core.app;
-import gui.app;  // This import will work in the implementation file
-import gui.context;
+import gui.app;
 
 void gui::context::focus_ctx()
 {

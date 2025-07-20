@@ -1,5 +1,7 @@
+module gui.context.welcome;
+
 import core;
-import gui;
+import gui.app;
 
 void gui::welcome_ctx::render_gui()
 {

@@ -1,12 +1,10 @@
-module;
-
 export module gui.context.welcome;
 
 import gui.context;
 
-namespace gui
+export namespace gui
 {
-	export class welcome_ctx : public context
+	class welcome_ctx : public context
 	{
 	public:
 		welcome_ctx() : context("welcome") {}

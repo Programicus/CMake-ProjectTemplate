@@ -1,9 +1,7 @@
 module;
 
-
 #include "vk_types.h"
 #include "vkbootstrap_wrapper.h"
-
 
 #include <glfw/glfw3.h>
 #include <imgui.h>
@@ -14,10 +12,8 @@ module;
 #include <chrono>
 #include <vector>
 
+module gui.vk.engine;
 
-export module gui.vk.engine:impl;
-
-import gui.vk.engine;
 import gui.vk.init;
 
 void VulkanEngine::init(const char* windowName)
@@ -74,6 +70,7 @@ void VulkanEngine::cleanup()
 		glfwTerminate();
 	}
 }
+
 ImVec4 dodgerBlue = ImVec4(30.f / 255.f, 144.f / 255.f, 1.0f, 1.0f);
 
 void VulkanEngine::new_frame()
@@ -104,6 +101,7 @@ void VulkanEngine::new_frame()
 	ImGui::PopStyleVar(2);
 
 }
+
 void VulkanEngine::render()
 {
 	ImGui::End();

@@ -1,8 +1,10 @@
 add_library(gui STATIC
 	imgui_ext.h
 	vk_types.h
+	app.cpp
 	context.cpp
 	context.welcome.cpp
+	vk_engine.cpp
 )
 
 target_sources(gui PUBLIC
@@ -12,9 +14,7 @@ target_sources(gui PUBLIC
 	context.cppm
 	context.welcome.cppm
 	gui.cppm
-	
 	vk_engine.cppm
-	vk_engine.impl.cppm
 	vk_init.cppm
 )
 
