@@ -11,8 +11,7 @@ module;
 #include <windows.h>
 #endif
 
-export module core.app:impl;
-import core.app;
+module core.app;
 
 using namespace core;
 

@@ -1,12 +1,13 @@
 add_subdirectory(log)
 add_subdirectory(assert)
 
-add_library(core STATIC)
+add_library(core STATIC
+	app.cpp
+)
 
 target_sources(core PUBLIC
 	FILE_SET CXX_MODULES FILES
 	app.cppm
-	app.impl.cppm
 	core.cppm
 	scope_guard.cppm
 )

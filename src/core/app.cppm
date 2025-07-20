@@ -9,7 +9,6 @@ export module core.app;
 
 export namespace core
 {
-
 	export class app
 	{
 	public:
