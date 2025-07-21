@@ -1,5 +1,6 @@
 add_library(gui STATIC
 	imgui_ext.h
+	imgui_ext.cpp
 	vk_types.h
 	app.cpp
 	context.cpp

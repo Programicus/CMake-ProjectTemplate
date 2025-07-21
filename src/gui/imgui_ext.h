@@ -41,4 +41,7 @@ namespace ImGuiExt
 		auto text = fmt::format(fmt, std::forward<Args>(args)...);
 		ImGui::Text("%s", text.c_str());
 	}
+
+	// Forces the next ImGui window to be created in a new viewport (separate GLFW window)
+	void ForceNewViewport();
 }
