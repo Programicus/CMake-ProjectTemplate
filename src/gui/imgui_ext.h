@@ -44,4 +44,7 @@ namespace ImGuiExt
 
 	// Forces the next ImGui window to be created in a new viewport (separate GLFW window)
 	void ForceNewViewport();
+	
+	// Forces the next ImGui window to be created in a new always-on-top viewport (separate GLFW window)
+	void ForceNewViewportAlwaysOnTop();
 }

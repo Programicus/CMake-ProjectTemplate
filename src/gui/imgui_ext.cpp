@@ -14,4 +14,14 @@ namespace ImGuiExt
         
         ImGui::SetNextWindowClass(&window_class);
     }
+    
+    void ForceNewViewportAlwaysOnTop()
+    {
+        // Force creation of a new always-on-top viewport
+        // Uses both NoAutoMerge (to force new viewport) and TopMost (for always-on-top)
+        static ImGuiWindowClass window_class;
+        window_class.ViewportFlagsOverrideSet = ImGuiViewportFlags_NoAutoMerge | ImGuiViewportFlags_TopMost;
+        
+        ImGui::SetNextWindowClass(&window_class);
+    }
 }
